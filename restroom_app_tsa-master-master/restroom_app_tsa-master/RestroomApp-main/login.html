@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restroom Availability</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Staff/Faculty Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container text-center mt-5">
+    <h2>Staff/Faculty Login</h2>
+    <form action="update_availability.html" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="teacherName">Teacher Name</label>
+            <input type="text" id="teacherName" name="teacherName" placeholder="Teacher Name" required class="form-control mb-4">
+        </div>
+        <div class="form-group">
+            <label for="restroom">Restroom</label>
+            <select id="restroom" name="restroom" class="form-control mb-4">
+                <option value="A/B">A/B</option>
+                <option value="B/C">B/C</option>
+                <option value="C/D">C/D</option>
+                <!-- Add other restroom options here -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status" name="status" class="form-control mb-4">
+                <option value="Closed">Closed</option>
+                <option value="Available">Available</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="floor">Floor</label>
+            <select id="floor" name="floor" class="form-control mb-4">
+                <option value="first_floor">First Floor</option>
+                <option value="second_floor">Second Floor</option>
+                <option value="third_floor">Third Floor</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary ml-2">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Home</a>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

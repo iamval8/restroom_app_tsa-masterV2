@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Blue gradient background */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: #fff; /* White text for better readability on the dark background */
+}
+
+h1, h2, h4 {
+    color: #fff; /* White color for titles for contrast against the background */
+}
+
+.navbar {
+    background-color: #022744; /* Dark blue color for the navbar */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3); /* Adds depth with a subtle shadow */
+}
+.navbar-toggler{
+    background-color: lightblue;
+}
+.nav-link {
+    color: #fff; /* White color for navbar links for better visibility */
+}
+
+.nav-link:hover {
+    color: #ade8f4; /* Lighter blue for hover effect */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue buttons */
+    border: none; /* Cleaner look without border */
+    box-shadow: 0 2px 4px rgba(0,0,0,.2); /* Subtle shadow for depth */
+}
+
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin-top: 20px; /* Adds some space at the top */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #0056b3; /* Slightly different shade for smaller screens */
+    }
+}

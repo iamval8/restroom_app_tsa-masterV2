@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>login.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+login.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1.0&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Restroom Availability</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://fonts.googleapis.com/css?family=Montserrat:400,700&quot; </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;styles.css&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;nav </span><span class="s2">class</span><span class="s3">=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;navbar-toggler&quot; </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-toggle</span><span class="s3">=&quot;collapse&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;#navbarNav&quot; </span><span class="s2">aria-controls</span><span class="s3">=&quot;navbarNav&quot; </span><span class="s2">aria-expanded</span><span class="s3">=&quot;false&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Toggle navigation&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;navbar-toggler-icon&quot;</span><span class="s0">&gt;&lt;/span&gt;</span>
+    <span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;collapse navbar-collapse&quot; </span><span class="s2">id</span><span class="s3">=&quot;navbarNav&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;ul </span><span class="s2">class</span><span class="s3">=&quot;navbar-nav&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;login.html&quot;</span><span class="s0">&gt;</span><span class="s1">Staff/Faculty Login</span><span class="s0">&lt;/a&gt;</span>
+            <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;/ul&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/nav&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container text-center mt-5&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h2&gt;</span><span class="s1">Staff/Faculty Login</span><span class="s0">&lt;/h2&gt;</span>
+    <span class="s0">&lt;form </span><span class="s2">action</span><span class="s3">=&quot;update_availability.html&quot; </span><span class="s2">method</span><span class="s3">=&quot;post&quot; </span><span class="s2">class</span><span class="s3">=&quot;mt-4&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot; </span><span class="s2">name</span><span class="s3">=&quot;teacherName&quot; </span><span class="s2">placeholder</span><span class="s3">=&quot;Teacher Name&quot; </span><span class="s2">required class</span><span class="s3">=&quot;form-control mb-4&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;select </span><span class="s2">name</span><span class="s3">=&quot;restroom&quot; </span><span class="s2">class</span><span class="s3">=&quot;form-control mb-4&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;A/B&quot;</span><span class="s0">&gt;</span><span class="s1">A/B</span><span class="s0">&lt;/option&gt;</span>
+            <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;B/C&quot;</span><span class="s0">&gt;</span><span class="s1">B/C</span><span class="s0">&lt;/option&gt;</span>
+            <span class="s4">&lt;!-- Add other restroom options here --&gt;</span>
+        <span class="s0">&lt;/select&gt;</span>
+        <span class="s0">&lt;select </span><span class="s2">name</span><span class="s3">=&quot;status&quot; </span><span class="s2">class</span><span class="s3">=&quot;form-control mb-4&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;Closed&quot;</span><span class="s0">&gt;</span><span class="s1">Closed</span><span class="s0">&lt;/option&gt;</span>
+            <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;Available&quot;</span><span class="s0">&gt;</span><span class="s1">Available</span><span class="s0">&lt;/option&gt;</span>
+        <span class="s0">&lt;/select&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">type</span><span class="s3">=&quot;submit&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-primary&quot;</span><span class="s0">&gt;</span><span class="s1">Submit</span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;/form&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+
+<span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+</pre>
+</body>
+</html>
