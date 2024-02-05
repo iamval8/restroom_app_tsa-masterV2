@@ -73,7 +73,7 @@ section {
 @keyframes pulse {
     0% {
         transform: scale(1);
-        background-color: #278eff;
+        background-color: #003cff;
         color: white;
     }
     50% {
@@ -81,7 +81,7 @@ section {
     }
     100% {
         transform: scale(1);
-        background-color: #278eff;
+        background-color: #003cff;
         color: white;
     }
 }
@@ -132,6 +132,10 @@ section {
         background-color: #0056b3; /* Slightly different shade for smaller screens */
     }
 }
+.map{
+    height: 100%;
+    width: 100%;
+}
 
 
 /*--------------------------------------------------------------
@@ -151,6 +155,9 @@ section {
     color: royalblue;
     text-align: center;
     border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .reasons .h4 {
