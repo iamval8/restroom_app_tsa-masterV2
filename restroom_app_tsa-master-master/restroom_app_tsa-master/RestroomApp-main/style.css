@@ -233,6 +233,9 @@ section {
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
+
+    position: relative;
 
 }
 
