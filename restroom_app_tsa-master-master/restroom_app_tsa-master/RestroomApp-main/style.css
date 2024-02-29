@@ -75,7 +75,7 @@ section {
     0% {
         transform: scale(1);
         background-color: #00fbfc;
-        color: white;
+        color: #000000;
     }
     50% {
         transform: scale(1.1);
@@ -83,7 +83,7 @@ section {
     100% {
         transform: scale(1);
         background-color: #00fbfc;
-        color: white;
+        color: #110000;
     }
 }
 
@@ -109,11 +109,11 @@ section {
     content: "material-symbols-outlined hover-icon" "arrow_forward";
 }
 
-.btn-container .hover-icon {
+.hover-icon {
     visibility: hidden;
 }
 
-.btn-container:hover .hover-icon {
+.hover-icon:hover {
     visibility: visible;
 }
 
@@ -219,6 +219,26 @@ section {
 .reasons .icon-box:hover h4 a {
     color: #278eff;
 }
+
+/*--------------------------------------------------------------
+# MAIN
+--------------------------------------------------------------*/
+
+#main {
+    /*background: radial-gradient(ellipse at 50% 50%, royalblue 0%, cyan 100%);
+    /* Other styles */
+
+        /*padding: 2rem 0;
+}
+
+/*--------------------------------------------------------------
+# LOGIN PAGE
+--------------------------------------------------------------*/
+
+#login{
+    background: #00fbfc;
+}
+
 /*--------------------------------------------------------------
 # Status Boxes
 --------------------------------------------------------------*/
