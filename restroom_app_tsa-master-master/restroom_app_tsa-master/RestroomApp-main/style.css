@@ -220,16 +220,6 @@ section {
     color: #278eff;
 }
 
-/*--------------------------------------------------------------
-# MAIN
---------------------------------------------------------------*/
-
-#main {
-    /*background: radial-gradient(ellipse at 50% 50%, royalblue 0%, cyan 100%);
-    /* Other styles */
-
-        /*padding: 2rem 0;
-}
 
 /*--------------------------------------------------------------
 # LOGIN PAGE
@@ -363,10 +353,10 @@ section {
 /*--------------------------------------------------------------
 #LOGIN PAGE
 --------------------------------------------------------------*/
-body {font-family: Arial, Helvetica, sans-serif;}
+.login .body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+.login .input[type=text], .input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -376,7 +366,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+.login .loginbtn {
     background-color: #3f6ce0;
     color: white;
     padding: 14px 20px;
@@ -386,40 +376,40 @@ button {
     width: 100%;
 }
 
-button:hover {
+.login .loginbtn:hover {
     opacity: 0.8;
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn {
+.login .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
 
 /* Center the image and position the close button */
-.imgcontainer {
+.login .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
 }
 
-img.avatar {
+.login .img.avatar {
     width: 40%;
     border-radius: 50%;
 }
 
-.container {
+.login .container {
     padding: 16px;
 }
 
-span.psw {
+.login .span.psw {
     float: right;
     padding-top: 16px;
 }
 
 /* The Modal (background) */
-.modal {
+.login .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -434,7 +424,7 @@ span.psw {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.login .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
@@ -442,7 +432,7 @@ span.psw {
 }
 
 /* The Close Button (x) */
-.close {
+.login .close {
     position: absolute;
     right: 25px;
     top: 0;
@@ -451,34 +441,35 @@ span.psw {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.login .close:hover,
+.login .close:focus {
     color: red;
     cursor: pointer;
 }
 
 /* Add Zoom Animation */
-.animate {
+.login .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
 
-@-webkit-keyframes animatezoom {
+.login @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
 
-@keyframes animatezoom {
+.login @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+.login @media screen and (max-width: 300px) {
     span.psw {
         display: block;
         float: none;
     }
+
     .cancelbtn {
         width: 100%;
     }
