@@ -54,3 +54,66 @@ $(document).ready(function() {
         }
     }
 });
+
+// CODE TO UPDATE RESTROOM AVAILABILITY - VV
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currentFloor = getCurrentFloor();
+
+    // Get restroom status from localStorage
+    const restrooms = JSON.parse(localStorage.getItem(currentFloor)) || {};
+
+    // Update restroom status on the webpage
+    displayRestroomStatus(currentFloor);
+
+    // Add event listener for button clicks
+    document.querySelectorAll('.btn-login').forEach((button) => {
+        button.addEventListener('click', () => {
+            const restroomId = button.dataset.restroomId;
+            const restroomStatus = prompt('Please enter the restroom status (Open or Closed)');
+
+            if (restroomStatus && (restroomStatus.toLowerCase() === 'open' || restroomStatus.toLowerCase() === 'closed')) {
+                // Update restroom status in localStorage
+                updateRestroomStatus(currentFloor, restroomId, restroomStatus);
+
+                // Update restroom status on the webpage
+                displayRestroomStatus(currentFloor);
+            } else {
+                alert('Invalid input. Please enter "Open" or "Closed".');
+            }
+        });
+    });
+});
+
+// Update restroom status and save to localStorage
+function updateRestroomStatus(floor, restroomId, restroomStatus) {
+    const restrooms = JSON.parse(localStorage.getItem(floor)) || {};
+    restrooms[restroomId] = restroomStatus.toLowerCase();
+    localStorage.setItem(floor, JSON.stringify(restrooms));
+}
+
+// Display restroom status on the webpage
+function displayRestroomStatus(floor) {
+    const restrooms = JSON.parse(localStorage.getItem(floor)) || {};
+
+    Object.entries(restrooms).forEach(([restroomId, restroomStatus]) => {
+        const restroomElement = document.getElementById(floor + '_' + restroomId);
+        if (restroomElement) {
+            restroomElement.querySelector('p').textContent = restroomStatus;
+        }
+    });
+}
+
+// Get the current floor name based on the page URL
+function getCurrentFloor() {
+    const url = window.location.pathname;
+    const floors = ['first_floor', 'second_floor', 'third_floor'];
+
+    for (let i = 0; i < floors.length; i++) {
+        if (url.includes(floors[i])) {
+            return floors[i];
+        }
+    }
+
+    return '';
+}
